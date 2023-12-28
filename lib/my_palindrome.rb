@@ -16,7 +16,6 @@ module MyPalindrome
   end
 end
 
-
 class String
   include MyPalindrome
 end

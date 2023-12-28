@@ -20,10 +20,10 @@ class TestMyPalindrome < Minitest::Test
   end
 
   def test_non_integer_palindrome
-    refute 12345.palindrome?
+    refute 12_345.palindrome?
   end
 
   def test_integer_palindrome 
-    assert 12321.palindrome?
+    assert 12_321.palindrome?
   end
 end
