@@ -2,6 +2,7 @@
 
 require_relative "my_palindrome/version"
 
+# A module for palindrome testing.
 module MyPalindrome
   # Returns true for a palindrome, false otherwise.
   def palindrome?
@@ -12,7 +13,7 @@ module MyPalindrome
   
   # Returns content for palindrome testing.
   def processed_content
-    self.to_s.scan(/[a-z\d]/i).join.downcase
+    to_s.scan(/[a-z\d]/i).join.downcase
   end
 end
 

@@ -23,7 +23,7 @@ class TestMyPalindrome < Minitest::Test
     refute 12_345.palindrome?
   end
 
-  def test_integer_palindrome 
+  def test_integer_palindrome
     assert 12_321.palindrome?
   end
 end
