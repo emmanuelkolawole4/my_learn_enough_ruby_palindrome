@@ -9,7 +9,6 @@ require_relative "my_palindrome/version"
 
 # Adding a method to the String class.
 class String
-
   # Returns content for palindrome testing.
   def palindrome?
     processed_content == processed_content.reverse
