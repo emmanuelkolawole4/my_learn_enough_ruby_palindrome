@@ -2,22 +2,25 @@
 
 require_relative "my_palindrome/version"
 
-# module MyPalindrome
-#   class Error < StandardError; end
-#   # Your code goes here...
-# end
-
-# Adding a method to the String class.
-class String
-  # Returns content for palindrome testing.
+module MyPalindrome
+  # Returns true for a palindrome, false otherwise.
   def palindrome?
     processed_content == processed_content.reverse
   end
-
+  
   private
-
-  # Returns true for a palindrome, false otherwise.
+  
+  # Returns content for palindrome testing.
   def processed_content
-    scan(/[a-z]/i).join.downcase
+    self.to_s.scan(/[a-z\d]/i).join.downcase
   end
+end
+
+
+class String
+  include MyPalindrome
+end
+
+class Integer
+  include MyPalindrome
 end
