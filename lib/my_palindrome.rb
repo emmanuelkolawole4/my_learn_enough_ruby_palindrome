@@ -21,4 +21,3 @@ class String
     scan(/[a-z]/i).join.downcase
   end
 end
-  

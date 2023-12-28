@@ -3,7 +3,6 @@
 require "test_helper"
 
 class TestMyPalindrome < Minitest::Test
-
   def test_non_palindrome
     refute "apple".palindrome?
   end
