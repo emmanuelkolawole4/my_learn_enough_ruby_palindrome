@@ -7,6 +7,7 @@ require_relative "my_palindrome/version"
 #   # Your code goes here...
 # end
 
+# Adding a method to the String class.
 class String
 
   # Returns content for palindrome testing.
