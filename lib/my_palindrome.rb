@@ -10,7 +10,6 @@ module MyPalindrome
   end
   
   private
-  
   # Returns content for palindrome testing.
   def processed_content
     to_s.scan(/[a-z\d]/i).join.downcase
