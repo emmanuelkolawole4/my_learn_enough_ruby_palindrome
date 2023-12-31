@@ -26,4 +26,8 @@ class TestMyPalindrome < Minitest::Test
   def test_integer_palindrome
     assert 12_321.palindrome?
   end
+
+  def test_whitespace_palindrome
+    refute "  ".palindrome?
+  end
 end
