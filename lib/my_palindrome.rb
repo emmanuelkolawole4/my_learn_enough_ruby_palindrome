@@ -12,7 +12,7 @@ module MyPalindrome
       processed_content == processed_content.reverse
     end
   end
-  
+
   private
 
   # Returns content for palindrome testing.
