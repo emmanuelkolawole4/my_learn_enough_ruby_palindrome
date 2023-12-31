@@ -1,4 +1,4 @@
-# MyPalindrome
+<!-- # MyPalindrome
 
 TODO: Delete this and the text below, and describe your gem
 
@@ -28,4 +28,53 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/my_palindrome.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/my_palindrome. -->
+
+
+# Palindrome detector
+
+`my_palindrome` is a sample Ruby gem created in [*Learn Enough Ruby to Be Dangerous*](https://www.learnenough.com/ruby-tutorial) by Folahanmi Kolawole.
+
+## Installation
+
+To install `my_palindrome`, add this line to your application's `Gemfile`:
+
+```
+gem 'my_palindrome'
+```
+
+Then install as follows:
+
+```
+$ bundle install
+```
+
+Or install it directly using `gem`:
+
+```
+$ gem install mhartl_palindrome
+```
+
+## Usage
+
+`my_palindrome` adds a `palindrome?` method to the `String` and `Integer` class, and can be used as follows:
+
+```
+$ irb
+>> require 'my_palindrome'
+>> "honey badger".palindrome?
+=> false
+>> "deified".palindrome?
+=> true
+>> "Able was I, ere I saw Elba.".palindrome?
+=> true
+>> phrase = "Madam, I'm Adam."
+>> phrase.palindrome?
+=> true
+>> 12321.palindrome?
+=> true
+```
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
